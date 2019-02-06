@@ -1,0 +1,15 @@
+9:38 AM 10/2/2015
+
+Workflow for extraction and analysis of GC6f and intrinsic imaging data.
+
+1. Convert raw movies to dff using "add routine name here."
+
+2. Open a prep image and arrange the 30 rois as needed. Be sure to press update in the roi manager after moving each roi. Size of rois should not be changed. When finished deselect all and save in a folder named roi. 
+
+2. Place the folder named roi containing the zipped roi file to be used for the analysis in the same directory. 
+
+3. Open import_WF_GCaMP6f in matlab. In line 10, enter the number of the folder within dff to be analyzed (will be 1).
+
+4. Enter the sample rate in frames/sec. (100 for calcium signals, "enter number" for intrinsic signals).
+
+5. Run the program. The data will be saved. 
